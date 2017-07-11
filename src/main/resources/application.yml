@@ -1,0 +1,23 @@
+#application conf
+spring:
+    datasource:
+        type: com.zaxxer.hikari.HikariDataSource
+    output:
+        ansi:
+            enabled: always
+    jmx:
+        default-domain: webshop
+            
+security:
+    basic:
+        enabled: false
+
+#logger
+logging:
+    level:
+        hu:
+            webshop: DEBUG
+        org:
+            springframework:
+                web: INFO
+    #file: ''
